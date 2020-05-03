@@ -1,0 +1,150 @@
+main {
+    background-color: rgb(238, 238, 238);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner .title {
+    padding:20px 50px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: -25px;
+    left: 75px;
+    font-weight: bold;
+}
+
+@media(max-width: 960px) {
+    .banner {
+        height: 30vh;
+        background-image: url(../image/03_about_the_society_banner.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner .title {
+        padding: 20px;
+        bottom: -25px;
+        left: 0px;
+    }
+
+    .banner .title h2 {
+        font-size: 24px;
+    }
+    .banner .title{
+        font-size: 8px;
+    }
+}
+
+.container {
+    margin-top: 60px;
+}
+.row{
+    margin: 0 0 20px 0;
+    display: flex;
+}
+.col-lg-5 {
+    position: relative;
+}
+
+.ab_texture {
+    width: 100%;
+}
+
+.ab_text {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.ab_text_md {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 10;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.ab_text_inside {
+    padding: 80px 10px;
+    border: 2px black solid;
+}
+
+@media(max-width: 992px) {
+    .col-lg-5 {
+        position: unset;
+    }
+
+    .ab_text {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        position: unset;
+        transform: unset;
+        text-align: center;
+    }
+    .ab_text_md {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        position: unset;
+        transform: unset;
+        text-align: center;
+    }
+    #ab_text_md{
+        order: 1;
+    }
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+#manager_row{
+    margin:20px 0 0 0 ;
+    padding-bottom:30px ;
+}
+#manager{
+    width: 100%;
+    border: 5px rgb(70, 70, 70) solid;
+}
+#manager_text{
+    padding: 20px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    line-height: 30px;
+}
+#manager_text p{
+    padding: 44px 0;
+    font-size: 25px;
+    margin: 0;
+}
+@media(max-width:1200px){
+#manager_text p{
+    padding: 29.5px 0;
+    font-size: 20px;
+    margin: 0;
+}
+}
+@media(max-width: 992px){
+    #manager{
+    margin: 0 0 30px 0;
+}
+}

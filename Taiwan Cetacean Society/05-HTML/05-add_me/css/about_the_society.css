@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+main {
+    background-color: rgb(238, 238, 238);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner .title {
+    padding:20px 50px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: -25px;
+    left: 75px;
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 960px) {
+    .banner {
+        height: 30vh;
+        background-image: url(../image/03_about_the_society_banner.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner .title {
+        padding: 20px;
+        bottom: -25px;
+        left: 0px;
+    }
+
+    .banner .title h2 {
+        font-size: 24px;
+    }
+    .banner .title{
+        font-size: 8px;
+    }
+}
+
+/* banner下方文字的介紹 */
+.word{
+    width: 100%;
+    height: 70vh;
+    padding: 65px 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.word p{
+font-size: 36px;
+
+}
+
+@media(max-width:600px){
+    .word{
+        padding: 20px 40px;
+        height: unset;
+    }
+    .word p{
+        margin-top: 50px;
+        font-size: 24px;
+        
+        }
+}
+
+
+/* 內文 */
+
+.row{
+
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    background-image: url(../image/add_me_pic.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+    position: relative;
+  
+}
+.mask{
+    width: 100%;
+    height: 50vh;
+
+    background-color:rgba(0, 0, 0, 0.6) ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    padding: 30px 60px;
+    margin: auto;
+
+}
+
+.mask h3{
+    border-bottom: solid 2px white;
+    color: white;  
+    text-align: center;
+    margin: 24px auto ;  
+}
+
+.mask p{
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.po-a{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media(max-width:600px){
+    .mask{
+        padding: 20px 30px;
+    }    
+    .mask h3{
+        border-bottom: solid 2px white;
+        color: white;  
+        text-align: center;
+        margin:16px auto;
+        font-size: 24px; 
+    }
+    
+    .mask p{
+        margin-top: 10px;
+        color: white;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+}
+.pa0{
+    padding: 0;
+}
+.mr0{
+    margin: 0;
+}
+

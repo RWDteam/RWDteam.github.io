@@ -1,0 +1,77 @@
+
+.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    -webkit-animation: line 4s ease infinite;
+    animation: line 4s ease infinite;
+}
+@keyframes line {
+    0% {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+    }
+
+    30% {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    }
+
+    70% {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    }
+
+    100% {
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%)
+    }
+}
+
+@-webkit-keyframes line {
+    0% {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+    }
+
+    30% {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    }
+
+    70% {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    }
+
+    100% {
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%)
+    }
+}
+.line_re{
+    height: 500px;
+    position: relative;
+}
+.line_re .line::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 200px;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    -webkit-animation: line 4s ease infinite;
+    animation: line 4s ease infinite;
+}
